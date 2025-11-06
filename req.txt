@@ -1,4 +1,5 @@
 langchain
+langchain
 python-dotenv
 pypdf
 pymupdf
@@ -12,8 +13,9 @@ duckduckgo_search==5.3.1b1
 pymupdf
 validators==0.28.1
 pdfplumber
- docx2txt
- python-pptx
- PyPDF2
+docx2txt
+python-pptx
+PyPDF2
 streamlit
- docx
+docx
+
