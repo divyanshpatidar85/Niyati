@@ -1,22 +1,25 @@
-langchain
-langchain-core
-python-dotenv
-pypdf
-pymupdf
-langchain-text-splitters
-langchain-openai
-chromadb
-faiss-cpu
-langchain_chroma
-langchain-groq
-duckduckgo_search==5.3.1b1
-pymupdf
-validators==0.28.1
-pdfplumber
-docx2txt
-python-pptx
-PyPDF2
-streamlit
-docx
+# Core dependencies
+streamlit==1.39.0
+pandas==2.2.3
 
+# File handling
+pdfplumber==0.11.5
+python-docx==1.1.2
+python-pptx==0.6.23
+docx2txt==0.8
 
+# LangChain ecosystem (modularized)
+langchain-core==0.3.8
+langchain-community==0.3.8
+langchain-text-splitters==0.3.1
+langchain-groq==0.1.4
+langchain-chroma==0.1.4  # sometimes needed for direct Chroma usage
+
+# Vector stores / Embeddings
+chromadb==0.5.5
+sentence-transformers==3.1.0
+huggingface-hub==0.25.2
+
+# Optional (depending on your needs)
+tiktoken==0.7.0
+pydantic==2.9.2
