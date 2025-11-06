@@ -6,22 +6,23 @@ from typing import List, Tuple
  
 import streamlit as st
 import pandas as pd
- 
+
 # File-type libs
 import pdfplumber
 import docx2txt
 from pptx import Presentation
- 
+
 # LangChain / LLM
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain.chains import RetrievalQA
- 
+
 # Vector DB (Chroma)
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
+
  
 # -----------------------------
 # Streamlit Page Setup
@@ -256,3 +257,4 @@ with col_right:
             st.subheader("📝 Executive Summary")
 
             st.write(summary)
+
