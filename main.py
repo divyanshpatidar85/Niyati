@@ -14,7 +14,7 @@ from pptx import Presentation
  
 # LangChain / LLM
 from langchain_groq import ChatGroq
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain.chains import RetrievalQA
@@ -254,4 +254,5 @@ with col_right:
  
             st.success("Summary ready!")
             st.subheader("📝 Executive Summary")
+
             st.write(summary)
